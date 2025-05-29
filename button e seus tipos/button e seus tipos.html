@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro</title>
+</head>
+<body>
+    <!-- Início do formulário de cadastro, método GET envia os dados pela URL -->
+    <form method="get">
+        <!-- Campo para digitar o nome do usuário (obrigatório) -->
+        <label>Nome*:</label>
+        <input type="text" name="nome" required><br>
+        
+        <!-- Campo para digitar a idade do usuário (obrigatório) -->
+        <label>Idade*:</label>
+        <input type="number" name="idade" required><br>    
+        
+        <!-- Campo para digitar a senha do usuário (obrigatório, caracteres ocultos) -->
+        <label>Password*:</label>
+        <input type="password" name="senha" required><br> 
+        
+        <!-- Campo desabilitado para sexo (não pode ser preenchido) -->
+        <label>Sexo*:</label>
+        <input disabled type="text" name="sexo"><br>
+        
+        <!-- Botão para enviar o formulário -->
+        <button type="submit">Enviar</button>
+
+        
+    </form>
+</body>
+</html>

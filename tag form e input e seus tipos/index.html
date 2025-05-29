@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro</title>
+</head>
+<body>
+    <form autocomplete="on" method="POST" action="#">
+        <!-- Campo para digitar o nome -->
+        Nome: <input type="text" name="nome" required><br>
+       
+        <!-- Campo para digitar a idade (apenas números entre 0 e 100) -->
+        Idade: <input type="number" min="0" max="100" name="idade"><br>
+       
+        <!-- Campo para digitar a senha (oculta os caracteres) -->
+        Senha: <input type="password" name="senha" required><br>
+        
+        <!-- Botão para enviar o formulário -->
+        <button type="submit">Enviar</button><br><br>
+       
+        <!-- Campo para selecionar um valor em uma faixa (slider) -->
+        range: <input type="range" min="0" max="100" name="range"><br><br>
+       
+        <!-- Campo para escolher uma cor -->
+        Cor: <input type="color" name="cor"><br><br>    
+      
+        <!-- Campo para digitar um e-mail -->
+        e-mail: <input type="email" name="email"><br><br>  
+       
+        <!-- Campo para digitar uma URL -->
+        url: <input type="url" name="url"><br><br>  
+       
+        <!-- Campo para selecionar uma data -->
+        date: <input type="date" name="data"><br><br>  
+
+        <!-- Campo para selecionar uma semana -->
+        week: <input type="week" name="semana"><br><br>  
+
+        <!-- Campo para selecionar um mês -->
+        month: <input type="month" name="mes"><br><br>
+       
+        <!-- Campo para digitar um telefone -->
+        telefone: <input type="tel" name="telefone"><br><br>  
+
+        <!-- Caixas de seleção (checkbox) -->
+        checkbox: <input type="checkbox" name="checkbox"> <input type="checkbox" name="checkbox"><br><br>
+
+        <!-- Botões de opção (radio) -->
+        radio: <input type="radio" name="radio"> <input type="radio" name="radio"><br><br>
+
+        <!-- Campo oculto (hidden) -->
+        hidden: <input type="hidden" name="hidden"><br><br>
+
+        <!-- Campo para selecionar arquivos -->
+        file: <input type="file" name="file" multiple><br><br>
+
+        <!-- Campo para pesquisa -->
+        search: <input type="search" name="search"><br><br>
+      
+        <!-- Botão que exibe um alerta ao ser clicado -->
+        button: <input type="button" value="Enviar" onclick="alert('Botão clicado!')"><br><br>
+    </form>
+</body>
+</html>

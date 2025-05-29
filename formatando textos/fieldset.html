@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- Define o tipo do documento como HTML5 -->
+
+<html lang="pt-br">
+<!-- Início do documento HTML, idioma português do Brasil -->
+
+<head>
+    <!-- Cabeçalho do documento, contém metadados e estilos -->
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Torna o layout responsivo em dispositivos móveis -->
+    <title>Trilha HTML dio</title>
+    <!-- Título da página exibido na aba do navegador -->
+    <style>
+        /* Estilos CSS para formatação dos elementos */
+        .row {
+            margin: 5px;
+        }
+        label {
+            width: 100px;
+            text-align: right;
+            border-color: blue;
+            display: inline-block;
+            padding: 5px;
+            border-width: 2px;
+        }
+
+        fieldset {
+            margin-bottom: 10px;
+            border-color: blue;
+            border-width: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Corpo do documento, onde o conteúdo visível é colocado -->
+    <h1>Formulário de cadastro</h1>
+    <!-- Título principal da página -->
+
+    <fieldset>
+        <!-- Agrupa campos relacionados em um formulário -->
+        <legend>Dados Pessoais</legend>
+        <!-- Título do grupo de campos -->
+        <div class="row">
+            <!-- Linha do formulário -->
+            <label for="nome">Nome:</label>
+            <!-- Rótulo para o campo de nome -->
+            <input type="text" id="nome" name="nome" required>
+            <!-- Campo de texto para o nome, obrigatório -->
+        </div>
+
+        <div class="row">
+            <label for="Profissão">Profissão:</label>
+            <input type="Profissão" id="Profissão" name="Profissão" required>
+            <!-- Campo para profissão, obrigatório -->
+        </div>
+
+        <div class="row">
+            <label for="Empresa">Empresa:</label>
+            <input type="Empresa" id="Empresa" name="Empresa" required>
+            <!-- Campo para empresa, obrigatório -->
+        </div>
+    </fieldset><br>
+    <!-- Fim do grupo de dados pessoais -->
+
+    <fieldset>
+        <legend>Dados de Endereço</legend>
+        <div class="row">
+            <label for="Endereço">Endereço:</label>
+            <input type="Endereço" id="Endereço" name="Endereço" required>
+            <!-- Campo para endereço, obrigatório -->
+        </div>
+
+        <div class="row">
+            <label for="Bairro">Bairro:</label>
+            <input type="Bairro" id="Bairro" name="Bairro" required>
+            <!-- Campo para bairro, obrigatório -->
+        </div>
+
+        <div class="row">
+            <label for="Cidade">Cidade:</label>
+            <input type="Cidade" id="Cidade" name="Cidade" required>
+            <!-- Campo para cidade, obrigatório -->
+        </div>
+    </fieldset><br>
+    <!-- Fim do grupo de dados de endereço -->
+
+    <fieldset>
+        <legend>Dados de Contatos</legend>
+        <div class="row">
+            <label for="Celular">Celular:</label>
+            <input type="Celular" id="Celular" name="Celular" required>
+            <!-- Campo para celular, obrigatório -->
+        </div>
+
+        <div class="row">
+            <label for="Whatsapp">Whatsapp:</label>
+            <input type="Whatsapp" id="Whatsapp" name="Whatsapp" required>
+            <!-- Campo para whatsapp, obrigatório -->
+        </div>
+    </fieldset><br>
+    <!-- Fim do grupo de dados de contatos -->
+
+    <fieldset>
+        <legend>Dados de Redes Sociais</legend>
+        <div class="row">
+            <label for="Linkedin">Linkedin:</label>
+            <input type="Linkedin" id="Linkedin" name="Linkedin" required>
+            <!-- Campo para Linkedin, obrigatório -->
+        </div>
+
+        <div class="row">
+            <label for="GitHub">GitHub:</label>
+            <input type="GitHub" id="GitHub" name="GitHub" required>
+            <!-- Campo para GitHub, obrigatório -->
+        </div>
+    </fieldset><br>
+    <!-- Fim do grupo de dados de redes sociais -->
+
+    <div class="row">
+        <!-- Linha para botões do formulário -->
+        <button type="reset">reset</button>
+        <!-- Botão para limpar todos os campos do formulário -->
+        limpar campos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- Texto explicativo -->
+        <button type="submit">enviar</button>
+        <!-- Botão para enviar o formulário -->
+        enviar formulário
+        <!-- Texto explicativo -->
+    </div>
+
+</body>
+<!-- Fim do corpo do documento -->
+</html>
+<!-- Fim do documento HTML -->
