@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resenha de Cores</title>
+    <style>
+        /* Centraliza o conteúdo na tela e define o fundo */
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f5f5f5;
+        }
+        /* Define o tamanho da área onde os cards ficarão posicionados */
+        .container {
+            position: relative;
+            width: 350px;
+            height: 350px;
+        }
+        /* Estiliza ambos os cards: tamanho, borda, arredondamento e posição absoluta */
+        .card1, .card2 {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            box-sizing: border-box;
+            border: 2px solid #e64f4f;
+            border-radius: 10px;
+            background: transparent;
+            color: #8cd986;
+            padding: 0;
+            margin: 0;
+        }
+        /* Posiciona o card1 no topo esquerdo e define sua cor de fundo */
+        .card1 {
+            left: 0;
+            top: 0;
+            background-color: #8cd986;
+        }
+        /* Posiciona o card2 deslocado para baixo e para a direita, com cor de fundo azul */
+        .card2 {
+            left: 60px;
+            top: 60px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Container para sobrepor os dois cards -->
+    <div class="container">
+        <!-- Primeiro card (verde claro) -->
+        <div class="card1"></div>
+        <!-- Segundo card (azul), sobreposto ao primeiro -->
+        <div class="card2"></div>
+    </div>
+</body>
+</html>
