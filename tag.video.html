@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag video e tag track </title>
+</head>
+<body>
+    <!-- Exibe um player de vídeo com controles para o usuário (play, pause, volume, etc.) -->
+    <video width="320" height="240" controls>
+        <!-- Fonte principal do vídeo em formato WEBM -->
+        <source src="movie.web" type="video/webm">
+        <!-- Fonte alternativa do vídeo em formato MP4 -->
+        <source src="movie.mp4" type="video/mp4">
+        <!-- Fonte alternativa do vídeo em formato OGG -->
+        <source src="movie.ogg" type="video/ogg">
+        <!-- Adiciona legenda em português -->
+        <track src="legenda.vtt" kind="subtitles" srclang="pt-BR" label="Português">
+        <!-- Adiciona legenda em inglês -->
+        <track src="legenda-en.vtt" kind="subtitles" srclang="en" label="English">  
+        <!-- Mensagem exibida caso o navegador não suporte o elemento de vídeo -->
+        Seu navegador não suporta o elemento de vídeo.  
+    </video>
+</body>
+</html>
