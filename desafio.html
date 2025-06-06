@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Vida Plena</title>
+    <style>
+        /* Define estilos gerais para o corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background: #f5f5f5;
+        }
+        /* Estiliza o menu de navegação */
+        .menu {
+            background: #45ef9a;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        /* Estiliza os links do menu */
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        /* Efeito hover nos links do menu */
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        /* Estiliza o cabeçalho de cada seção */
+        header {
+            background: #e3f2fd;
+            text-align: center;
+            padding: 30px 0 10px 0;
+        }
+        /* Estiliza as imagens do cabeçalho */
+        header img {
+            width: 180px;
+            border-radius: 10px;
+        }
+        /* Estiliza o conteúdo principal das seções */
+        .content {
+            background: #fff;
+            margin: 30px auto;
+            max-width: 800px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(195, 141, 141, 0.067);
+        }
+        /* Estiliza títulos */
+        h1, h2 {
+            color: #1976d2;
+        }
+        /* Estiliza tabelas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 18px;
+        }
+        /* Estiliza células da tabela */
+        th, td {
+            border: 1px solid #1976d2;
+            padding: 10px;
+            text-align: center;
+        }
+        /* Estiliza cabeçalho da tabela */
+        th {
+            background: #bbdefb;
+        }
+        /* Estiliza rodapé da tabela */
+        tfoot td {
+            background: #e3f2fd;
+        }
+        /* Estiliza o rodapé da página */
+        footer {
+            background: #365de9;
+            color: #fff;
+            text-align: center;
+            padding: 18px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        /* Estiliza informações de contato */
+        .contato-info {
+            margin-bottom: 18px;
+        }
+        /* Estiliza labels do formulário de contato */
+        .form-contato label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+        /* Estiliza campos de entrada e textarea do formulário */
+        .form-contato input, .form-contato textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            border-radius: 4px;
+            border: 1px solid #bbb;
+            box-sizing: border-box;
+        }
+        /* Estiliza botões do formulário */
+        .form-contato button {
+            margin-top: 12px;
+            padding: 8px 18px;
+            border: none;
+            border-radius: 4px;
+            background: #308ce9;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        /* Estiliza botão de reset do formulário */
+        .form-contato button[type="reset"] {
+            background: #bdbdbd;
+            color: #222;
+            margin-left: 8px;
+        }
+        /* Responsividade para telas menores */
+        @media (max-width: 900px) {
+            .content { max-width: 98vw; padding: 10px; }
+            header img { width: 100px; }
+        }
+        @media (max-width: 600px) {
+            .menu a { margin: 0 8px; font-size: 1em; }
+            footer { font-size: 0.9em; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu de navegação entre as páginas -->
+    <nav class="menu">
+        <a href="#principal">Página Principal</a>
+        <a href="#sobre">Sobre a Clínica</a>
+        <a href="#horario">Horário de Atendimento</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Página Principal: apresenta a clínica -->
+    <section id="principal">
+        <header>
+            <!-- Imagem do header da página principal -->
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Clínica Vida Plena">
+            <h1>Clínica Vida Plena</h1>
+        </header>
+        <div class="content">
+            <h2>Bem-vindo à Clínica Vida Plena</h2>
+            <p>
+                Nossa clínica oferece atendimento humanizado e especializado em diversas áreas da saúde, com profissionais experientes e estrutura moderna para cuidar do seu bem-estar e de toda a sua família.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sobre a Clínica: informações institucionais -->
+    <section id="sobre">
+        <header>
+            <!-- Imagem do header da página sobre (fachada da clínica) -->
+            <img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?auto=format&fit=crop&w=400&q=80" alt="Fachada Clínica">
+            <h1>Sobre a Clínica</h1>
+        </header>
+        <div class="content">
+            <h2>Quem somos</h2>
+            <p>
+                A Clínica Vida Plena atua há mais de 10 anos oferecendo serviços de saúde de qualidade, com foco em clínica geral, psicologia, pediatria e oftalmologia. Nosso compromisso é proporcionar um atendimento acolhedor, ético e eficiente, promovendo saúde e qualidade de vida para nossos pacientes.
+            </p>
+        </div>
+    </section>
+
+    <!-- Horário de Atendimento: tabela de horários dos serviços -->
+    <section id="horario">
+        <header>
+            <!-- Imagem do header da página de horários -->
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Horários Clínica">
+            <h1>Horário de Atendimento</h1>
+        </header>
+        <div class="content">
+            <h2>Serviços e horários</h2>
+            <p>
+                Confira nossos horários de atendimento para cada especialidade:
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Serviços</th>
+                        <th>Segunda a Sexta</th>
+                        <th>Sábados</th>
+                        <th>Feriados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Clínica geral</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 14h</td>
+                        <td>08h - 14h</td>
+                    </tr>
+                    <tr>
+                        <td>Psicologia</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 14h</td>
+                        <td>08h - 14h</td>
+                    </tr>
+                    <tr>
+                        <td>Pediatria</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 18h</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Oftalmologia</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 18h</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Contato: informações, mapa e formulário -->
+    <section id="contato">
+        <header>
+            <!-- Imagem do header da página de contato (agenda) -->
+            <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Agenda de Contato">
+            <h1>Contato</h1>
+        </header>
+        <div class="content">
+            <h2>Fale conosco</h2>
+            <div class="contato-info">
+                <strong>Telefones:</strong> (11) 99999-8888 &nbsp;|&nbsp; WhatsApp: (11) 98888-7777 <br>
+                <strong>Endereço:</strong> Rua das Flores, 123 - Centro, São Paulo - SP, 01000-000
+            </div>
+            <!-- Iframe do Google Maps mostrando o endereço da clínica -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4576787036603!2d-46.63330968440644!3d-23.58806898466913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8b2b2b2b3%3A0x2b2b2b2b2b2b2b2b!2sRua%20das%20Flores%2C%20123%20-%20Centro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001000-000!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" 
+                width="100%" height="220" style="border:1px solid #1976d2; border-radius:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- Formulário de contato para o usuário enviar mensagem -->
+            <form class="form-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé fixo com informações da clínica -->
+    <footer>
+        Clínica Vida Plena &copy; 2025 &nbsp;|&nbsp; Rua das Flores, 123 - Centro, São Paulo - SP &nbsp;|&nbsp; Tel: (11) 99999-8888
+    </footer>
+</body>
+</html>
